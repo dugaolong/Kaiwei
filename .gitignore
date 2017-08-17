@@ -7,15 +7,3 @@
 /build
 /.idea
 /captures
-.externalNativeBuild
-app/build.gradle
-app/libs/
-app/proguard-rules.pro
-app/src/
-build.gradle
-captures/
-gradle.properties
-gradle/
-gradlew
-gradlew.bat
-settings.gradle
