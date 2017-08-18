@@ -57,7 +57,14 @@ public class RecycleAdapter extends RecyclerView.Adapter<MyViewHolder> implement
     //item和data绑定
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Glide.with(mContext).load(mDatas.get(position).getThumbnail()).into(holder.imageView);
+        String imageUrl = mDatas.get(position).getThumbnail();
+        if(!"".equals(imageUrl)){
+            holder.imageView.setVisibility(View.VISIBLE);
+            Glide.with(mContext).load(imageUrl).into(holder.imageView);
+        }else {
+            holder.imageView.setVisibility(View.GONE);
+        }
+
         holder.title.setText(mDatas.get(position).getTitle());
         holder.source.setText(mDatas.get(position).getSource());
         holder.itemView.setTag(position);

@@ -16,13 +16,14 @@
         android:layout_width="100dp"
         android:layout_height="match_parent"
         android:scaleType="fitCenter"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginRight="8dp"/>
 
     <RelativeLayout
         android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="8dp"
+
         android:layout_toRightOf="@id/image_item"
         android:orientation="vertical">
 
@@ -33,7 +34,7 @@
             android:layout_alignParentTop="true"
             android:gravity="left"
             android:text="孩子假期无人管怎么办孩子假期无人管怎么办"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textColor="@color/black"/>
 
 
