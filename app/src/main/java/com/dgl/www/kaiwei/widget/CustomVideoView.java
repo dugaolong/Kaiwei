@@ -1,4 +1,4 @@
-package com.dgl.www.kaiwei;
+package com.dgl.www.kaiwei.widget;
 
 import android.content.Context;
 import android.media.MediaPlayer;

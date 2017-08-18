@@ -9,10 +9,6 @@ public class StyleData {
     private String[] backreason;
     private String view;
 
-    public StyleData(String[] backreason, String view) {
-        this.backreason = backreason;
-        this.view = view;
-    }
 
     public String[] getBackreason() {
         return backreason;

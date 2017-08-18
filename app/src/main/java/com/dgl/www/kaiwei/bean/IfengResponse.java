@@ -11,6 +11,17 @@ public class IfengResponse {
     private String  id;
     private IFengData  data;
 
+    public IfengResponse() {
+    }
+
+    public IfengResponse(boolean success, String channelName, String channelType, String id, IFengData data) {
+        this.success = success;
+        this.channelName = channelName;
+        this.channelType = channelType;
+        this.id = id;
+        this.data = data;
+    }
+
     public boolean isSuccess() {
         return success;
     }

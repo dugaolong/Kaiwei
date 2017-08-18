@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/nav_discussion"-->
+            <!--android:icon="@drawable/ic_forum"-->
+            <!--android:title="消息"/>-->
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/star_light"
+            android:title="我的收藏"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/setting_light"
+            android:title="设置"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/more"
+            android:title="建议"
+            android:checked="true"/>
+    </group>
+
+    <item android:title="其他">
+        <menu>
+            <item
+                android:icon="@drawable/mail_light"
+                android:title="邮箱"
+                android:checked="true"/>
+            <item
+                android:icon="@drawable/call_light"
+                android:title="联系我们"
+                android:checked="true"/>
+        </menu>
+    </item>
+
+</menu>

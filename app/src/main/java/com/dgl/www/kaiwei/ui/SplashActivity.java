@@ -1,4 +1,4 @@
-package com.dgl.www.kaiwei;
+package com.dgl.www.kaiwei.ui;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -8,6 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.dgl.www.kaiwei.widget.CustomVideoView;
+import com.dgl.www.kaiwei.R;
 
 public class SplashActivity extends AppCompatActivity implements View.OnClickListener {
 
