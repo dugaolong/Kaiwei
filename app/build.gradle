@@ -17,6 +17,25 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    /**
+     * 配置生成的apk打包的名称
+     */
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                if (variant.buildType.name.equals('debug')){
+                    def fileName = "kaiwei_debug.apk"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }else {
+                    // 输出apk名称为HeJiaoYu_GD_XXX.apk
+                    def fileName = "kaiwei_release.apk"
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+    }
 }
 
 dependencies {
@@ -29,4 +48,7 @@ dependencies {
     compile 'com.android.support:cardview-v7:25.+'
     compile 'com.alibaba:fastjson:1.2.36'
     compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
 }

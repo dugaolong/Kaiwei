@@ -4,7 +4,6 @@ import android.app.Application;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Build;
-import android.provider.Settings;
 import android.util.Log;
 
 import okhttp3.OkHttpClient;
@@ -26,9 +25,9 @@ public class MyApplication extends Application {
         instance = this;
 //        Log.e(TAG,"签名的哈希地址sign====="+this.checkAPP(this));
 
-
-        Log.e(TAG,"Android SDK平台获取高唯一性设备识别码:"
-                + Settings.Secure.getString(appContext.getContentResolver(), "android_id"));
+//
+//        Log.e(TAG,"Android SDK平台获取高唯一性设备识别码:"
+//                + Settings.Secure.getString(appContext.getContentResolver(), "android_id"));
 
 
         boolean debug = BuildConfig.DEBUG;
